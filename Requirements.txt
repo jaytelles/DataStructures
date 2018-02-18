@@ -1,0 +1,6 @@
+1. All data structures shall be written to work with generic member types
+2. All data structures shall conform to a common interface
+3. All python code shall work with python3.6
+    
+python3.6 *.py
+javac *.java; java *
