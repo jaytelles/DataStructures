@@ -1,0 +1,8 @@
+1. all python code shall be written in python3.6
+2. all data structures shall work with any generic data type
+    2a. sorting will depend on the data type
+
+
+    
+    
+python3.6 *.py
