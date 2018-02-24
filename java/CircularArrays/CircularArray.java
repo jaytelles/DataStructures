@@ -14,20 +14,36 @@ class CircularArray{
     }
     
     public boolean append(Object element){
-        //if ((end + 1) % maxSize == start) {
         if (currentSize + 1 > maxSize) {
             return false;
         }
         
         array[end] = element;
-        end = (end + 1) % maxSize;
+        end = (end + 1) % maxSize; //this may cause issues when it comes time to remove elements
         currentSize++;
         
+        return true;
+    }
+    
+    public boolean prepend(Object element){
+        if (currentSize + 1 > maxSize) {
+            return false;
+        }
+        
+        array[start] = element;
+        start = (start - 1) % maxSize; //this may cause issues when it comes time to remove elements
+        if (start < 0){
+            start += maxSize;
+        }
+        currentSize++;
+        
+        return true;
+    }
+    
+    private void printInfo() {
         System.out.print("start: " + start);
         System.out.print("    end: " + end);
         System.out.println("    " + this);
-        
-        return true;
     }
     
     public String toString(){
