@@ -40,7 +40,7 @@ class CircularArray{
         return true;
     }
     
-    private void printInfo() {
+    public void printInfo() {
         System.out.print("start: " + start);
         System.out.print("    end: " + end);
         System.out.println("    " + this);
