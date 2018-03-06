@@ -40,6 +40,23 @@ class CircularArray{
         return true;
     }
     
+    public Object pop(){
+        if(currentSize==0){
+            return null;
+        }
+        
+        if(end > 0){
+            end--;
+        } else {
+            end = maxSize - 1;
+        }
+        
+        Object retval = array[end];
+        currentSize--;
+        
+        return retval;
+    }
+    
     public void printInfo() {
         System.out.print("start: " + start);
         System.out.print("    end: " + end);
