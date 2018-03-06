@@ -11,9 +11,45 @@ public class Tester {
         xxx.printInfo();
         xxx.prepend(5);
         xxx.printInfo();
+        System.out.println();
+        System.out.println();
         
-        //xxx.pop();
-        //xxx.printInfo();
+        xxx = new CircularArray(5);
+        xxx.append(1);
+        xxx.printInfo();
+        xxx.append(2);
+        xxx.printInfo();
+        xxx.append(3);
+        xxx.printInfo();
+        xxx.append(4);
+        xxx.printInfo();
+        xxx.append(5);
+        xxx.printInfo();
+        System.out.println();
+        System.out.println();
+        
+        System.out.println(xxx.pop());
+        xxx.printInfo();
+        
+        System.out.println(xxx.pop());
+        xxx.printInfo();
+        
+        System.out.println(xxx.pop());
+        xxx.printInfo();
+        
+        System.out.println(xxx.pop());
+        xxx.printInfo();
+        
+        System.out.println(xxx.pop());
+        xxx.printInfo();
+        
+        System.out.println(xxx.pop());
+        xxx.printInfo();
+        
+        System.out.println(xxx.pop());
+        xxx.printInfo();
+        
+        
         /*
         xxx.prepend(6);
         xxx.printInfo();
